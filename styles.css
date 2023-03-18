@@ -1,0 +1,17 @@
+.header {
+  text-align: center;
+}
+
+.timer-conatiner{
+    padding: 2.5rem;
+    font-size: x-large;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.timer{
+    text-align: center;
+}
