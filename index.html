@@ -5,46 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Timer App</title>
   </head>
-  <body>
-    <div class="container">
+  <body class="bg-slate-900">
+    <div class="flex flex-col justify-center items-center">
       <div class="header">
-        <h1>Timer</h1>
-        <input type="datetime-local" id="dateTime-current"  />
-        <button class="submit" onclick="startTimer()">Start</button>
-        <button class="reset" onclick="resetTimer()">Reset</button>
+        <p class="text-5xl p-4 m-4 font-serif text-center">Timer</p>
+
+        <input
+          type="datetime-local"
+          id="dateTime-current"
+          class="rounded-full bg-sky-500 hover:bg-sky-700 p-4 w-72 m-2"
+        />
+        <button
+          class="submit rounded-full bg-sky-500 hover:bg-sky-700 p-4 w-32 m-2"
+          onclick="startTimer()"
+        >
+          Start
+        </button>
+        <button
+          class="reset rounded-full bg-sky-500 hover:bg-sky-700 p-4 w-32 m-2"
+          onclick="resetTimer()"
+        >
+          Reset
+        </button>
       </div>
 
-      <div class="timer-conatiner">
-        <div class="days">
-            <p> DAYS
-                <div class="days-count timer">
-                    --
-                </div>
-            </p>
+      <div class="timer-conatiner m-4 text-neutral-900 conatiner flex flex-wrap flex-1">
+        <div class="days bg-stone-50 p-8 w-1/6 h-50 rounded shadow-xl shadow-sky-500">
+          <div class="days-count timer">--</div>
+          <div class="timer-name">DAYS</div>
         </div>
-        <div class="hours">
-            <p> HOURS
-                <div class="hours-count timer">
-                    --
-                </div>
-            </p>
+        <div class="hours bg-stone-50 p-8 w-1/6 h-50 rounded shadow-xl shadow-sky-500">
+          <div class="hours-count timer">--</div>
+          <div class="timer-name">HOURS</div>
         </div>
-        <div class="minutes">
-            <p> MINUTES
-                <div class="minutes-count timer">
-                    --
-                </div>
-            </p>
+        <div class="minutes bg-stone-50 p-8 w-1/6 h-50 rounded shadow-xl shadow-sky-500">
+          <div class="minutes-count timer">--</div>
+          <div class="timer-name">MINUTES</div>
         </div>
-        <div class="seconds">
-            <p> SECONDS
-                <div class="seconds-count timer">
-                    --
-                </div>
-            </p>
+        <div class="seconds bg-stone-50 p-8 w-1/6 h-50 rounded shadow-xl shadow-sky-500">
+          <div class="seconds-count timer rose-900">--</div>
+          <div class="timer-name">SECONDS</div>
         </div>
       </div>
     </div>

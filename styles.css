@@ -1,8 +1,13 @@
-.header {
-  text-align: center;
+body{
+  color: #fff;
+}
+
+.header{
+  margin-top: 5rem;
 }
 
 .timer-conatiner{
+  margin-top: 1rem;
     padding: 2.5rem;
     font-size: x-large;
     font-weight: 700;
@@ -15,3 +20,9 @@
 .timer{
     text-align: center;
 }
+
+.timer-name{
+  text-align: center;
+  font-size: 1rem
+}
+

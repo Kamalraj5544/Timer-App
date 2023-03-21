@@ -24,8 +24,8 @@ function startTimer() {
       hoursTimer.innerHTML = elaspedTimeInHours - elaspedTimeInDays * 24;
       minsTimer.innerHTML = elaspedTimeInMins - elaspedTimeInHours * 60;
       secsTimer.innerHTML = elaspedTimeInSec - elaspedTimeInMins * 60;
-    }else{
-      clearInterval(id)
+    } else {
+      clearInterval(id);
     }
   }
 
